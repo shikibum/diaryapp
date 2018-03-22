@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+  @entries = Entry.all
   def index
     @websites = [
       ["http://railsgirls.com", "Rails Girls"],
