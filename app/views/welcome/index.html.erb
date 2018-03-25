@@ -2,9 +2,7 @@
   <h1>My Rails Girls Diary</h1>
   <div>
     <div>
-      <% @entries = Entry.all %>
-  <% for entry in @entries %>
-  <% @entries.each %>
+  <% @entries.each do |entry|%>
     <h2><%= entry.title %></h2>
       <p><%= entry.date %></p>
       <p><%= entry.contents %></p>

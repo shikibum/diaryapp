@@ -1,1 +1,5 @@
-# test
+  <% @entries.each do |entry|%>
+    <h2><%= entry.title %></h2>
+    <p><%= entry.date %></p>
+    <p><%= entry.contents %></p>
+<% end %>
