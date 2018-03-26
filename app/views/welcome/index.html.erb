@@ -3,12 +3,15 @@
   <div>
     <div>
   <% @entries.each do |entry|%>
-    <h2><%= entry.title %></h2>
+  <h2><%= link_to(entry.title, entry_path(entry)) %></h2>
       <p><%= entry.date %></p>
       <p><%= entry.contents %></p>
   <% end %>
     </div>
   </div>
+  <br>
+  <%= link_to("New entry", new_entry_path) %>
+  <br>
   <div>
   <h1>My favourite websites</h1>
   <%
